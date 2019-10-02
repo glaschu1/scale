@@ -213,24 +213,48 @@ class App extends Component {
   }
 
   handleDarkColorsAmountChange (e) {
+    if (e.target.value && e.target.value > 100) {
+      e.target.value = 100;
+    }
+    if (e.target.value && e.target.value < 0) {
+      e.target.value = 0;
+    }
     this.setState({
       darkColorsAmount: e.target.value
     })
   }
 
   handleDarkestAmountChange (e) {
+    if (e.target.value && e.target.value > 100) {
+      e.target.value = 100;
+    }
+    if (e.target.value && e.target.value < 0) {
+      e.target.value = 0;
+    }
     this.setState({
       darkestAmount: e.target.value
     })
   }
 
   handleLightColorsAmountChange (e) {
+    if (e.target.value && e.target.value > 100) {
+      e.target.value = 100;
+    }
+    if (e.target.value && e.target.value < 0) {
+      e.target.value = 0;
+    }
     this.setState({
       lightColorsAmount: e.target.value
     })
   }
 
   handleLightestAmountChange (e) {
+        if (e.target.value && e.target.value > 100) {
+      e.target.value = 100;
+    }
+    if (e.target.value && e.target.value < 0) {
+      e.target.value = 0;
+    }
     this.setState({
       lightestAmount: e.target.value
     })
@@ -249,6 +273,12 @@ class App extends Component {
   }
 
   handleDarkColorsAmountBlur (e) {
+        if (e.target.value && e.target.value > 100) {
+      e.target.value = 100;
+    }
+    if (e.target.value && e.target.value < 0) {
+      e.target.value = 0;
+    }
     if (!e.target.value) {
       this.setState({
         darkColorsAmount: 0
@@ -257,6 +287,12 @@ class App extends Component {
   }
 
   handleDarkestAmountBlur (e) {
+        if (e.target.value && e.target.value > 100) {
+      e.target.value = 100;
+    }
+    if (e.target.value && e.target.value < 0) {
+      e.target.value = 0;
+    }
     if (!e.target.value) {
       this.setState({
         darkestAmount: 0
